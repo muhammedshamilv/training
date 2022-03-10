@@ -27,7 +27,7 @@ def test_average_negative():
 
 def test_average_negative_positive():
     ret = prgrms.average([-1,2,3,4,-5])
-    assert ret == 3
+    assert ret == 0.6
 
 def test_average_none():
     ret = prgrms.average([])
