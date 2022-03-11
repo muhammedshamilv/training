@@ -1,14 +1,10 @@
 import math
 
-def paragraph(p):
-    if bool(p) == False:
-        return 0
-
 def alphanumeric(p):
      if not p.isalnum():
        return False
 
-def numbercharectors(p):
+def numbercharacters(p):
      acc=0
      for i in p:
           acc+=1
@@ -24,6 +20,7 @@ def numberword(p):
           if i ==' ':
                acc+=1
      return acc
+
 def emptysentence(p):
      if "." or "!" or"?" not in p:
           return None    
