@@ -1,8 +1,5 @@
 import math
 
-def alphanumeric(p):
-     if not p.isalnum():
-       return False
 
 def numbercharacters(p):
      acc=0
@@ -10,20 +7,13 @@ def numbercharacters(p):
           acc+=1
      return acc
 
-def emptywords(p):
-     if " " not in p:
-          return None
-
 def numberword(p):
      acc=0
      for i in p:
           if i ==' ':
                acc+=1
      return acc
-
-def emptysentence(p):
-     if "." or "!" or"?" not in p:
-          return None    
+   
 
 def sentences(p):
      acc=0
