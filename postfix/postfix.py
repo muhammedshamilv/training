@@ -1,4 +1,5 @@
 def postfix(expression):
+    "postfix operation"
     stack= []
     for i in expression:
         if i.isdigit():
