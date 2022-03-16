@@ -59,10 +59,6 @@ def test_mask_word_good_guess_mix():
     guesses=["x","e","h"]
     ret = hangman.mask_word(secret_word,guesses)
     assert ret == "e-e-h---"
-   
-
-
-
 
 def test_create_status_normal():
     secret_word = "elephant"
@@ -93,7 +89,6 @@ def test_play_round_correct_guess():
     assert repeat == False
     assert finished == False
 
-
 def test_play_round_correct_wrong():
     secret_word = "elephant"
     guesses = ["e"]
@@ -105,8 +100,6 @@ def test_play_round_correct_wrong():
     assert repeat == False
     assert finished == False
 
-
-
 def test_play_round_correct_repeat():
     secret_word = "elephant"
     guesses = ["e"]
@@ -117,7 +110,6 @@ def test_play_round_correct_repeat():
     assert remaining_turns == 8
     assert repeat == True
     assert finished == False
-
 
 def test_play_round_correct_complete():
     secret_word = "elephant"
